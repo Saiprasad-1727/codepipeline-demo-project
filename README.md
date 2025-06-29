@@ -113,6 +113,35 @@ CodePipeline
 
 
 
+## if you are facing the same error
+
+![alt text](image-14.png)
+
+
+here some permissions are missing that we need to add in the IAM service as shown in the below
+
+![alt text](image-16.png)
+
+- click on add permission -> create inline policy --> select policy editor as JSON and enter the script as shown in below
+
+        ```{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Action": [
+				"codedeploy:GetApplicationRevision"
+			],
+			"Resource": [
+				"arn:aws:codedeploy:us-east-1:920373000485:application:demo-ec2"
+			]
+		}
+	]
+}
+```
+
+![alt text](image-17.png)
+
 
 --------------------
 appspec.yml
