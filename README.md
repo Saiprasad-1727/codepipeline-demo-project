@@ -53,7 +53,7 @@ CodePipeline
           
           click on next
 
-          ![alt text](image-5.png)
+![alt text](image-5.png)
 
 - step 4: Add build stage
 
