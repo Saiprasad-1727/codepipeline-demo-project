@@ -143,6 +143,10 @@ here some permissions are missing that we need to add in the IAM service as show
 
 ![alt text](image-17.png)
 
+![alt text](image-18.png)
+
+![alt text](image-19.png)
+
 
 --------------------
 appspec.yml
