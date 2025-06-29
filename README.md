@@ -126,8 +126,8 @@ here some permissions are missing that we need to add in the IAM service as show
 
   
         {
-	"Version": "2012-10-17",
-	"Statement": [
+		"Version": "2012-10-17",
+		"Statement": [
 		{
 			"Effect": "Allow",
 			"Action": [
@@ -137,9 +137,8 @@ here some permissions are missing that we need to add in the IAM service as show
 				"arn:aws:codedeploy:us-east-1:920373000485:application:demo-ec2"
 			]
 		}
-	]
-
-	}
+		]
+		}
 
 
 ![alt text](image-17.png)
