@@ -1,29 +1,33 @@
 #=======================================================================================================
 
-Two Refrences:
-
-AWS CodeDeploy Tutorial | AWS CodePipeline | Real World Project
-
-https://blog.devgenius.io/deploy-a-reactjs-application-to-aws-ec2-instance-using-aws-codepipeline-3df5e4157028
-
-
-#=======================================================================================================
+## Steps to execute the project
 
 1. Create IAM Role for EC2 and AWS CodeDeploy
 
-EC2RoleForS3
-CodeDeployRole
+1.1 Creata a role and name as EC2RoleForS3 and attach a AmazonS3ReadOnlyAccess
 
-2. Create EC2 Instance and Attach that EC2 role.
+![alt text](image.png)
 
-and install code depoloy agent
 
-sudo yum update
+1.2  Create a role and name ass CodeDeployRole and attach a AWSCodeDeployRole
+
+![alt text](image-1.png)
+
+2. Create EC2 Instance and Attach that EC2RoleForS3 in actions --> security --> modify IAM Role
+
+![alt text](image-3.png)
+
+![alt text](image-2.png)
+
+Launch the instance and install the code deploy agent with below commands
+
+```sudo yum update
 sudo yum install ruby
 sudo yum install wget
 wget https://aws-codedeploy-us-east-1.s3.amazonaws.com/latest/install
 chmod +x ./install
 sudo ./install auto
+```
 
 
 3. aws codepipeline following steps:
