@@ -143,10 +143,9 @@ here some permissions are missing that we need to add in the IAM service as show
 
 ![alt text](image-17.png)
 
-![alt text](image-18.png)
+![image](https://github.com/user-attachments/assets/ce86baaa-aa80-49a5-9131-b91b4f3a956c)
 
-![alt text](image-19.png)
-
+![image](https://github.com/user-attachments/assets/ba8c2314-a452-4e6f-815f-f34c6d64494a)
 
 --------------------
 appspec.yml
