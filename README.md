@@ -42,7 +42,7 @@ CodePipeline
           Role name - AWSCodePipelineServiceRole-us-east-1-react-pipeline1
           click on next
 
-          ![alt text](image-4.png)
+![alt text](image-4.png)
           
 - step 3: Add source stage
 
