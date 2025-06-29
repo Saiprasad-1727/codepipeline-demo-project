@@ -124,7 +124,8 @@ here some permissions are missing that we need to add in the IAM service as show
 
 - click on add permission -> create inline policy --> select policy editor as JSON and enter the script as shown in below
 
-        ```{
+        ```
+        {
 	"Version": "2012-10-17",
 	"Statement": [
 		{
@@ -137,8 +138,9 @@ here some permissions are missing that we need to add in the IAM service as show
 			]
 		}
 	]
-}
-```
+}```
+
+
 
 ![alt text](image-17.png)
 
