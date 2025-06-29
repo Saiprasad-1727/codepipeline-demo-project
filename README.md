@@ -32,20 +32,86 @@ sudo ./install auto
 
 3. aws codepipeline following steps:
 
-Step 1: CodePipeline
-Step 2: Code Source (CodeCommit or Github)
-Step 3: Skip Build(Feature)
-Step 4: Choose Code Depoloy
+CodePipeline
+
+- Step 1: select Build custome pipeline and click next.
+- step 2: choose pipeline settings
+
+          Pipeline name - react-pipeline1
+          Service role - new service role
+          Role name - AWSCodePipelineServiceRole-us-east-1-react-pipeline1
+          click on next
+
+          ![alt text](image-4.png)
+          
+- step 3: Add source stage
+
+          Source provider - GitHub (via GitHub App)
+          Connection - here connect to your github profile to pull your repo
+          Repository name - Saiprasad-1727/codepipeline-demo-project 
+          default branch - main
+          
+          click on next
+
+          ![alt text](image-5.png)
+
+- step 4: Add build stage
+
+          Build provider - Other build providers / AWS CodeBuild
+          Project name - create a  project
+
+                            Create build project 
+
+                            Project configuration :-
+
+                            Project name - demo-react-build-project
+                            Project type - default project
+                            Build specifications - Use a buildspec file ( buildsepc.yml file contains in the repo https://github.com/Saiprasad-1727/codepipeline-demo-project/blob/main/buildspec.yml)
+
+                            Continue to CodePipeline
 
 
-p
+          click on next
+
+          ![alt text](image-6.png)
+
+- step 5: Add test stage ( this was optional so skipped this stage)                 
 
 
-:W
+- step 6: Add deploy stage
 
-#=======================================================================================================
+          Deploy provider - AWS CodeDeploy
 
-Appspec.yml file structure:
+          Application name - 
+          
+          create a applicatoion and deployment group in code deploy service before adding into this
+
+           ![alt text](image-7.png)
+           ![alt text](image-8.png)
+           ![alt text](image-9.png)
+
+           Deployment group name - code-deploy-for -ec2
+           Service role - Add your role which was created in the step 1 CodeDeployRole
+           Environment Configuration - Add your EC2 name like below
+
+           ![alt text](image-10.png)
+
+           uncheck the load balance as it was demo project for practise purpose
+
+          create deployment group
+
+          ![alt text](image-12.png)
+
+          ![alt text](image-11.png)
+
+
+          CLICk ON NEXT
+
+##  the final pipeline need to validate and verify before creating pipeline
+
+![alt text](image-13.png)
+
+
 
 
 --------------------
