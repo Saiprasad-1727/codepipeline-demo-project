@@ -73,7 +73,7 @@ CodePipeline
 
           click on next
 
-          ![alt text](image-6.png)
+![alt text](image-6.png)
 
 - step 5: Add test stage ( this was optional so skipped this stage)                 
 
@@ -86,7 +86,7 @@ CodePipeline
           
           create a applicatoion and deployment group in code deploy service before adding into this
 
-           ![alt text](image-7.png)
+![alt text](image-7.png)
            ![alt text](image-8.png)
            ![alt text](image-9.png)
 
@@ -94,15 +94,15 @@ CodePipeline
            Service role - Add your role which was created in the step 1 CodeDeployRole
            Environment Configuration - Add your EC2 name like below
 
-           ![alt text](image-10.png)
+   ![alt text](image-10.png)
 
            uncheck the load balance as it was demo project for practise purpose
 
           create deployment group
 
-          ![alt text](image-12.png)
+   ![alt text](image-12.png)
 
-          ![alt text](image-11.png)
+  ![alt text](image-11.png)
 
 
           CLICk ON NEXT
